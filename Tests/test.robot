@@ -8,7 +8,7 @@ ${COUNT}        2
 *** Keywords ***
 
 *** Test Cases ***
-Opening
+Opening browser
     Open browser    ${URL}   ${BROWSER} 
 Click start Button
     Click Button    id:head_btnStart
@@ -29,4 +29,5 @@ Select from table
         ${COUNT}  Evaluate  ${COUNT}+1
     END
     Click Button  id:head_btnNext3
-    
+Closing browser
+    Close Browser
